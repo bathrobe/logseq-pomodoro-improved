@@ -1,8 +1,8 @@
 {
-  "name": "logseq-pomodoro-timer",
+  "name": "logseq-pomodoro-improved",
   "version": "0.0.1",
-  "description": "A joyful pomodoro timer for block task item 🍅",
-  "author": "©Charlie",
+  "description": "A light update to the Logseq sample pomodoro 🍅",
+  "author": "©Joe and ©Charlie",
   "license": "MIT",
   "scripts": {
     "dev": "parcel ./index.html --public-url ./",

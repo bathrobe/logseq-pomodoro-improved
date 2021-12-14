@@ -1,13 +1,10 @@
-## Pomodoro Timer Sample
+## Logseq Pomodoro Improved
 
-What's it? https://en.wikipedia.org/wiki/Pomodoro_Technique
+Info about the Pomodoro Technique [here](https://en.wikipedia.org/wiki/Pomodoro_Technique).
 
-This is sample that show you how to use slot ui to render block content in part :)
+A light update to the Logseq team's original Pomodoro timer, with adjustable lengths of time and a bell at the end of the session.
 
-### Demo
-
-![demo](./demo.gif)
-
+To change the time, adjust the number at the end of the block's macro, eg `{{renderer :pomodoro_fdcfd adjust_this_number}}`
 ### API
 
 [![npm version](https://badge.fury.io/js/%40logseq%2Flibs.svg)](https://badge.fury.io/js/%40logseq%2Flibs)
@@ -19,16 +16,18 @@ This is sample that show you how to use slot ui to render block content in part 
 
 > ⚠️ The current implementation may have performance issues,
 > especially when there are too many running timer instances.
-> That's because time ticker needs messaging frequently between
-> host and plugin sandbox. We are exploring better solutions for
-> the rendering of block content partly.
+> That's because time ticker needs to message frequently between
+> the host and the plugin sandbox. We are exploring better solutions for
+> the rendering of block content.
  
 ### Running the Sample
 
 > 🏷 Minimal version of App [0.4.6](https://github.com/logseq/logseq/releases/tag/0.4.6) !
  
-- `yarn && yarn build` in terminal to install dependencies.
+- `yarn && yarn build` or `npm install && npm run build` in the terminal to install dependencies.
 - `Load unpacked plugin` in Logseq Desktop client.
+
+Sometimes the slash command doesn't appear after installation unless you quit Logseq and reopen it.
 
 ### License
 MIT

@@ -5,7 +5,6 @@ const fs = require('fs');
  * main entry
  */
 async function main () {
-  logseq.App.showMsg('hello, pomodoro timer :)')
 
   const genRandomStr = () => Math.random().
     toString(36).
@@ -32,7 +31,7 @@ async function main () {
     .pomodoro-timer-btn {
        border: 1px solid var(--ls-border-color); 
        white-space: initial; 
-       padding: 4px 4px; 
+       padding: 3px 4px; 
        border-radius: 4px; 
        user-select: none;
        cursor: default;

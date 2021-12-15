@@ -93,6 +93,7 @@ async function main () {
 
     function _render (init: boolean) {
       let bell = new Audio('../bell.flac')
+      bell.volume = 0.5
       const nowTime = Date.now()
       const offsetTime = Math.floor((nowTime - startTime) / 1000)
       const isDone = durationTime < offsetTime

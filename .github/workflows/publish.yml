@@ -32,15 +32,16 @@ jobs:
           ls
           echo "::set-output name=tag_name::$(git tag --sort version:refname | tail -n 1)"
 
-      - name: GitHub Create Tag Release
-        uses: Roang-zero1/github-create-release-action@v2.1.0
+      - name: Create Release
+        uses: ncipollo/release-action@v1
         id: create_release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           VERSION: ${{ github.ref }}
         with:
-          version_regex: ^v[[:digit:]]+\.[[:digit:]]+\.[[:digit:]]+
-          update_existing: true
+          allowUpdates: true 
+          draft: false
+          prerelease: false
 
       - name: Upload zip file
         id: upload_zip

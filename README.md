@@ -4,6 +4,8 @@ Info about the Pomodoro Technique [here](https://en.wikipedia.org/wiki/Pomodoro_
 
 A light update to the Logseq team's original Pomodoro timer, with adjustable lengths of time and a bell at the end of the session.
 
+To create a pomodoro with a standard 25 minute time, make a block like this: `{{renderer :pomodoro_fdcfd}}`
+
 To change the time, adjust the number at the end of the block's macro, eg `{{renderer :pomodoro_fdcfd adjust_this_number}}`
 ### API
 

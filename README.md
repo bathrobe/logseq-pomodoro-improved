@@ -4,6 +4,8 @@ Info about the Pomodoro Technique [here](https://en.wikipedia.org/wiki/Pomodoro_
 
 A light update to the Logseq team's original Pomodoro timer, with adjustable lengths of time and a bell at the end of the session.
 
+To create a pomodoro with default 25 minute time, type `\Pomodoro` 
+
 To change the time, adjust the number at the end of the block's macro, eg `{{renderer :pomodoro_fdcfd adjust_this_number}}`
 ### API
 
@@ -26,6 +28,7 @@ To change the time, adjust the number at the end of the block's macro, eg `{{ren
  
 - `yarn && yarn build` or `npm install && npm run build` in the terminal to install dependencies.
 - `Load unpacked plugin` in Logseq Desktop client.
+- Restart Logseq to take effect.
 
 Sometimes the slash command doesn't appear after installation unless you quit Logseq and reopen it.
 
